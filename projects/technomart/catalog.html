@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7cPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style-min.css">
+</head>
+
+<body class="catalog">
+    
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <a class="header-logo" href="index.html">
+                    <img src="img/logo-technomart.svg" width="110" height="22" alt="Логотип магазина 'Техномарт'">
+                </a>
+                <form action="https://echo.htmlacademy.ru" method="get">
+                    <input class="search-field" type="text" placeholder="Поиск:">
+                    <svg class="search-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
+                        <g>
+                            <path d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5 C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2 C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z"/>
+                        </g>
+                    </svg>
+                </form>
+                <a class="header-link" href="">
+                    <svg class="link-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve">
+                        <path d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765
+                        C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z"/>
+                    </svg>
+                    Закладки: 0
+                </a>
+                <a class="header-link active" href="">
+                    <svg class="link-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                        <g>
+                            <circle cx="4.5" cy="13.5" r="1.5"/>
+                            <circle cx="12.5" cy="13.5" r="1.5"/>
+                            <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                        </g>
+                    </svg>
+                    Корзина: 10
+                </a>
+                <a class="header-link button" href="">Оформить заказ</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header-middle">
+                <p class="advertising-text">Интернет-магазин строительных материалов<br>и инструментов для ремонта</p>
+                <div class="header-contact">
+                    <a class="header-phone" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
+                    <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                </div>
+                <div class="profile-controls">
+                    <ul class="profile-buttons">
+                        <li>
+                            <a class="profile-button profile-name button"  href="">
+                                <svg class="user-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="18px" viewBox="0 0 20 18" enable-background="new 0 0 20 18" xml:space="preserve">
+                                    <path d="M17.881,14.166c-2.144-0.735-4.256-1.666-5.207-2.39c-0.657-0.501-0.77-1.618-0.517-2.415
+                                    c1.118-0.903,1.864-2.477,1.864-4.278C14.021,2.276,12.221,0,10,0S5.979,2.276,5.979,5.083c0,1.801,0.746,3.374,1.863,4.277
+                                    c0.253,0.798,0.141,1.915-0.517,2.416c-0.95,0.724-3.063,1.654-5.207,2.39S0,18,0,18h20C20,18,20.025,14.901,17.881,14.166z"/>
+                                </svg>
+                                Равшан Джамшутович
+                            </a>
+                        </li>
+                        <li>
+                            <a class="profile-button profile-name button"  href="">
+                                <svg class="logout-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="17px" viewBox="0 0 21 17" enable-background="new 0 0 21 17" xml:space="preserve">
+                                    <g>
+                                        <polygon points="21,8.5 12.125,0 12.125,6 6.125,6 6.125,11 12.125,11 12.125,17   "/>
+                                        <path d="M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027 v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.327,3.106,13.952z"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="profile-links">
+                        <li><a class="profile-link" href="">Мои заказы</a></li>
+                        <li><a class="profile-link" href="">Личный кабинет</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="index.html">Главная</a></li>
+                    <li><a class="nav-link" href="">Компания</a></li>
+                    <li><a class="nav-link">Каталог</a></li>
+                    <li><a class="nav-link" href="">Новости</a></li>
+                    <li><a class="nav-link" href="">Спецпредложения</a></li>
+                    <li><a class="nav-link" href="">Доставка</a></li>
+                    <li><a class="nav-link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="catalog-header">
+                <h1 class="catalog-title">Перфораторы</h1>
+
+                <nav>
+                    <ul class="breadcrumbs">
+                        <li><a class="catalog-home breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a></li>
+                        <li><a class="breadcrumbs-link" href="">Каталог</a></li>
+                        <li><a class="breadcrumbs-link" href="">Инструмент</a></li>
+                        <li>Перфораторы</li>
+                    </ul>
+                </nav>
+            </div>
+        
+            <div class="grid-block">
+                <section class="filter">
+                    <h2 class="filter-title">Фильтр:</h2>
+
+                    <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+                        <fieldset>
+                            <legend class="fieldset-title">Цена:</legend>
+                            <div class="range">
+                                <div class="range-slider">
+                                    <span class="green-line"></span>
+                                    <span class="min-handle"><span class="visually-hidden">Установить минимальную цену</span></span>
+                                    <span class="max-handle"><span class="visually-hidden">Установить максимальную цену</span></span>
+                                </div>
+                            </div>
+                            <div class="range-inputs">
+                                <label class="visually-hidden" for="min">Минимальная стоимость</label>
+                                <input class="range-input min" type="text" id="min" name="min" value="0">
+                                <span class="hyphen">—</span>
+                                <label class="visually-hidden" for="max">Максимальная стоимость</label>
+                                <input class="range-input max" type="text" id="max" name="max" value="30000">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="fieldset-title">Производители:</legend>
+                            <ul class="filter-producers">
+                                <li>
+                                    <p>
+                                        <input class="visually-hidden" id="bosch" name="bosch" type="checkbox" checked>
+                                        <label class="param-title prod" for="bosch">Bosch</label>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <input class="visually-hidden" id="interskol" name="interskol" type="checkbox">
+                                        <label class="param-title prod" for="interskol">Интерскол</label>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <input class="visually-hidden" id="makita" name="makita" type="checkbox" checked>
+                                        <label class="param-title prod" for="makita">Makita</label>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <input class="visually-hidden" id="dewalt" name="dewalt" type="checkbox">
+                                        <label class="param-title prod" for="dewalt">Dewalt</label>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <input class="visually-hidden" id="hitachi" name="hitachi" type="checkbox">
+                                        <label class="param-title prod" for="hitachi">Hitachi</label>
+                                    </p>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="fieldset-title">Питание:</legend>
+                            <ul class="filter-power">
+                                <li>
+                                    <p>
+                                        <input class="visually-hidden" name="power" id="rechargeable" type="radio" checked>
+                                        <label class="param-title power" for="rechargeable">Аккумуляторные</label>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                    <input class="visually-hidden" name="power" id="mains" type="radio">
+                                    <label class="param-title power" for="mains">Сетевые</label>
+                                </p>
+                                </li>
+                            </ul>
+                        </fieldset>
+
+                        <button class="filter-submit button" type="submit">Показать</button>
+                    </form>
+                </section>
+
+                <section class="product-list">
+                    <h2 class="visually-hidden">Список товаров</h2>
+
+                    <div class="sort">
+                        <span class="sort-title">Сортировка:</span>
+                        <ul class="sort-controls">
+                            <li><a class="sort-control active" href="">По цене</a></li>
+                            <li><a class="sort-control" href="">По типу</a></li>
+                            <li><a class="sort-control" href="">По функционалу</a></li>
+                        </ul>
+                        <ul class="sort-arrows">
+                            <li>
+                                <a class="sort-arrow active" href="">
+                                    <svg class="arrow-up" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                                        <polygon points="5.5,0 0,10 11,10 "/>
+                                    </svg>
+                                    <span class="visually-hidden">По возрастанию</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sort-arrow" href="">
+                                    <svg class="arrow-down" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                                        <polyline points="5.5,10 0,0 11,0 "/>
+                                    </svg>
+                                    <span class="visually-hidden">По убыванию</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="products">
+                        <li class="product-card">
+                            <a href="">
+                                <h3 class="card-title">Перфоратор BOSCH BFG 3000</h3>
+                            </a>
+                            <p class="card-picture">
+                                <img src="img/catalog-item-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                            </p>
+                            <div class="card-links">
+                                <a class="card-buy" href="buy.html">
+                                    <svg class="buy-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                                        <g>
+                                            <circle cx="4.5" cy="13.5" r="1.5"/>
+                                            <circle cx="12.5" cy="13.5" r="1.5"/>
+                                            <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                                        </g>
+                                    </svg>
+                                    Купить
+                                </a>
+                                <a class="card-bookmark" href="">В закладки</a>
+                            </div>
+                            <span class="card-sale">22500 Р.</span> 
+                            <span class="card-price">15500 Р.</span>
+                        </li>
+                        <li class="product-card">
+                            <a href="">
+                                <h3 class="card-title">Перфоратор BOSCH BFG 6000</h3>
+                            </a>
+                            <p class="card-picture">
+                                <img src="img/catalog-item-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+                            </p>
+                            <div class="card-links">
+                                <a class="card-buy" href="buy.html">
+                                    <svg class="buy-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                                        <g>
+                                            <circle cx="4.5" cy="13.5" r="1.5"/>
+                                            <circle cx="12.5" cy="13.5" r="1.5"/>
+                                            <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                                        </g>
+                                    </svg>
+                                    Купить
+                                </a>
+                                <a class="card-bookmark" href="">В закладки</a>
+                            </div>
+                            <span class="card-sale">30500 Р.</span> 
+                            <span class="card-price">25500 Р.</span>
+                        </li>
+                        <li class="product-card new">
+                            <a href="">
+                                <h3 class="card-title">Перфоратор BOSCH BFG 2000</h3>
+                            </a>
+                            <p class="card-picture">
+                                <img src="img/catalog-item-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+                            </p>
+                            <div class="card-links">
+                                <a class="card-buy" href="buy.html">
+                                    <svg class="buy-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                                        <g>
+                                            <circle cx="4.5" cy="13.5" r="1.5"/>
+                                            <circle cx="12.5" cy="13.5" r="1.5"/>
+                                            <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                                        </g>
+                                    </svg>
+                                    Купить
+                                </a>
+                                <a class="card-bookmark" href="">В закладки</a>
+                            </div>
+                            <span class="card-sale no-sale">12500 Р.</span> 
+                            <span class="card-price">12500 Р.</span>
+                        </li>
+                        <li class="product-card">
+                            <a href="">
+                                <h3 class="card-title">Перфоратор BOSCH BFG 3000</h3>
+                            </a>
+                            <p class="card-picture">
+                                <img src="img/catalog-item-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                            </p>
+                            <div class="card-links">
+                                <a class="card-buy" href="buy.html">
+                                    <svg class="buy-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                                        <g>
+                                            <circle cx="4.5" cy="13.5" r="1.5"/>
+                                            <circle cx="12.5" cy="13.5" r="1.5"/>
+                                            <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                                        </g>
+                                    </svg>
+                                    Купить
+                                </a>
+                                <a class="card-bookmark" href="">В закладки</a>
+                            </div>
+                            <span class="card-sale">22500 Р.</span> 
+                            <span class="card-price">15500 Р.</span>
+                        </li>
+                        <li class="product-card new">
+                            <a href="">
+                                <h3 class="card-title">Перфоратор BOSCH BFG 6000</h3>
+                            </a>
+                            <p class="card-picture">
+                                <img src="img/catalog-item-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+                            </p>
+                            <div class="card-links">
+                                <a class="card-buy" href="buy.html">
+                                    <svg class="buy-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                                        <g>
+                                            <circle cx="4.5" cy="13.5" r="1.5"/>
+                                            <circle cx="12.5" cy="13.5" r="1.5"/>
+                                            <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                                        </g>
+                                    </svg>
+                                    Купить
+                                </a>
+                                <a class="card-bookmark" href="">В закладки</a>
+                            </div>
+                            <span class="card-sale">30500 Р.</span> 
+                            <span class="card-price">25500 Р.</span>
+                        </li>
+                        <li class="product-card">
+                            <a href="">
+                                <h3 class="card-title">Перфоратор BOSCH BFG 2000</h3>
+                            </a>
+                            <p class="card-picture">
+                                <img src="img/catalog-item-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+                            </p>
+                            <div class="card-links">
+                                <a class="card-buy" href="buy.html">
+                                    <svg class="buy-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                                        <g>
+                                            <circle cx="4.5" cy="13.5" r="1.5"/>
+                                            <circle cx="12.5" cy="13.5" r="1.5"/>
+                                            <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                                        </g>
+                                    </svg>
+                                    Купить
+                                </a>
+                                <a class="card-bookmark" href="">В закладки</a>
+                            </div>
+                            <span class="card-sale no-sale">12500 Р.</span> 
+                            <span class="card-price">12500 Р.</span>
+                        </li>
+                        <li class="product-card new">
+                            <a href="">
+                                <h3 class="card-title">Перфоратор BOSCH BFG 3000</h3>
+                            </a>
+                            <p class="card-picture">
+                                <img src="img/catalog-item-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                            </p>
+                            <div class="card-links">
+                                <a class="card-buy" href="buy.html">
+                                    <svg class="buy-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                                        <g>
+                                            <circle cx="4.5" cy="13.5" r="1.5"/>
+                                            <circle cx="12.5" cy="13.5" r="1.5"/>
+                                            <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                                        </g>
+                                    </svg>
+                                    Купить
+                                </a>
+                                <a class="card-bookmark" href="">В закладки</a>
+                            </div>
+                            <span class="card-sale">22500 Р.</span> 
+                            <span class="card-price">15500 Р.</span>
+                        </li>
+                        <li class="product-card">
+                            <a href="">
+                                <h3 class="card-title">Перфоратор BOSCH BFG 6000</h3>
+                            </a>
+                            <p class="card-picture">
+                                <img src="img/catalog-item-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+                            </p>
+                            <div class="card-links">
+                                <a class="card-buy" href="buy.html">
+                                    <svg class="buy-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                                        <g>
+                                            <circle cx="4.5" cy="13.5" r="1.5"/>
+                                            <circle cx="12.5" cy="13.5" r="1.5"/>
+                                            <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                                        </g>
+                                    </svg>
+                                    Купить
+                                </a>
+                                <a class="card-bookmark" href="">В закладки</a>
+                            </div>
+                            <span class="card-sale">30500 Р.</span> 
+                            <span class="card-price">25500 Р.</span>
+                        </li>
+                        <li class="product-card">
+                            <a href="">
+                                <h3 class="card-title">Перфоратор BOSCH BFG 2000</h3>
+                            </a>
+                            <p class="card-picture">
+                                <img src="img/catalog-item-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+                            </p>
+                            <div class="card-links">
+                                <a class="card-buy" href="buy.html">
+                                    <svg class="buy-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                                        <g>
+                                            <circle cx="4.5" cy="13.5" r="1.5"/>
+                                            <circle cx="12.5" cy="13.5" r="1.5"/>
+                                            <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                                        </g>
+                                    </svg>
+                                    Купить
+                                </a>
+                                <a class="card-bookmark" href="">В закладки</a>
+                            </div>
+                            <span class="card-sale no-sale">12500 Р.</span> 
+                            <span class="card-price">12500 Р.</span>
+                        </li>
+                    </ul>
+                    <div class="page-numbers">
+                        <ul class="numbers-list">
+                            <li><a class="number-link active">1</a></li>
+                            <li><a class="number-link" href="">2</a></li>
+                            <li><a class="number-link" href="">3</a></li>
+                            <li><a class="number-link" href="">Следующая</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+
+        <!-- About -->
+        <section class="catalog-about">
+            <div class="container">
+                <h2>Пара слов о перфораторах</h2>
+                <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p> 
+                <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
+                ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+            </div>
+        </section>
+        <!-- /about -->
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a class="footer-logo" href="index.html">
+                    <img src="img/logo-technomart.svg" width="137" height="22" alt="Логотип магазина 'Техномарт'">
+                </a>
+                <nav>
+                    <ul class="footer-nav">
+                        <li><a class="footer-link" href="">Компания</a></li>
+                        <li><a class="footer-link" href="">Новости</a></li>
+                        <li><a class="footer-link" href="catalog.html">Каталог</a></li>
+                        <li><a class="footer-link" href="">Доставка</a></li>
+                        <li><a class="footer-link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-middle">
+                <p class="footer-contacts">
+                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                    <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
+                </p>
+                <nav>
+                    <ul class="footer-offers">
+                        <li><a class="footer-link" href="">Материалы</a></li>
+                        <li><a class="footer-link" href="">Техника</a></li>
+                        <li><a class="footer-link" href="">Инструмент</a></li>
+                        <li><a class="footer-link" href="">Спецпредложения</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-inner">
+                    <p class="copyright">
+                        &copy; 2010–2019 Компания &laquo;Техномарт&raquo;
+                        <br> Все права защищены
+                    </p>
+                    <ul class="social">
+                        <li><a class="social-link" href=""><span class="visually-hidden">Техномарт во Вконтакте</span></a></li>
+                        <li><a class="social-link" href=""><span class="visually-hidden">Техномарт на Фейсбук</span></a></li>
+                        <li><a class="social-link" href=""><span class="visually-hidden">Техномарт в Инстаграм</span></a></li>
+                    </ul>
+                    <div class="feedback">
+                        <p class="feedback-link">
+                            Обратная связь:
+                            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                        </p>
+                        <p class="feedback-link">
+                            Разработано —
+                            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                        </p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </footer>
+
+    <div class="checkout hide">
+        <p>Товар добавлен в корзину!</p>
+        <ul class="checkout-buttons">
+            <li><a class="checkout-button button" href="">Оформить заказ</a></li>
+            <li><a class="checkout-button button continue" href="">Продолжить покупки</a></li>
+        </ul>
+        <button class="close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </div>
+
+    <script src="js/main-min.js"></script>
+</body>
+
+</html>
