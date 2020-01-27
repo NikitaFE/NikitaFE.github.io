@@ -3,24 +3,60 @@
 <head>
 	<meta charset="UTF-8">
 	<title>NikitaFE - Portfolio</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-	<header>
-		<nav>
-			<a href=""><img src="" alt=""></a>
-			<ul>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<a href="projects/technomart/index.html">
-		Technomart
-	</a>
+	<div class="wrapper">
+		<ul>
+			<li class="work">
+				<div class="work__image"><img src="img/technomart-preview.jpg" alt=""></div>
+				<div class="work__info">
+					<div class="work__description">
+						<h2 class="work__title">"Техномарт". Выпускной проект курса "HTML и CSS, уровень 1" от htmlacademy</h2>
+						<p class="work__text">
+							Сверстаны две страницы главная и каталог. При нажатии на кнопки "Заблудились? Напишите нам" на главной и "Купить" на странице каталога появляются модальные окна.
+						</p>
+						<ul class="work__technologies">
+							<li class="work__technology">HTML5</li>
+							<li class="work__technology">CSS3</li>
+							<li class="work__technology">JavaScript(Открытие модальных окон)</li>
+							<li class="work__technology">Семантичная, кроссбраузенрая, доступная и валидная верстка</li>
+							<li class="work__technology">Pixel perfect</li>
+						</ul>
+					</div>
+					<div class="work__links"> 
+						<a href="projects/technomart/index.html" target="_blank">Посмотреть работу</a>
+						<a href="https://github.com/NikitaFE/Technomart" target="_blank">Работа на GitHub</a>
+					</div>
+				</div>
+			</li>
+			<li class="work">
+				<div class="work__image"><img src="img/cat-energy-preview.jpg" alt=""></div>
+				<div class="work__info">
+					<div class="work__description">
+						<h2 class="work__title">"Кэт энерджи". Выпускной проект курса "HTML и CSS, уровень 2" от htmlacademy</h2>
+						<p class="work__text">
+							Сверстаны все три страницы в трех состояниях: мобильная, планшетная и десктопная версии.
+						</p>
+						<ul class="work__technologies">
+							<li class="work__technology">HTML5</li>
+							<li class="work__technology">CSS3</li>
+							<li class="work__technology">SCSS</li>
+							<li class="work__technology">методология БЭМ</li>
+							<li class="work__technology">GULP</li>
+							<li class="work__technology">JavaScript(Вставка Яндекс карты, в Украине работает только с vpn)</li>
+							<li class="work__technology">Адаптивная, кроссбраузенрая, семантичная, доступная и валидная верстка</li>
+							<li class="work__technology">Pixel perfect</li>
+						</ul>
+					</div>
+					<div class="work__links">
+						<a href="projects/build/index.html" target="_blank">Посмотреть работу</a>
+						<a href="https://github.com/NikitaFE/895771-cat-energy-18" target="_blank">Работа на GitHub</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
 </body>
 </html>
