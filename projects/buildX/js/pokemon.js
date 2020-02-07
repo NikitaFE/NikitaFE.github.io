@@ -1,1 +1,0 @@
-$(document).ready(function(){$.getJSON("https://pokeapi.co/api/v2/pokemon").done(function(o){for(var e=0;e<10;e++)console.log(o.results[e])}).fail(function(o,e,n){var t=e+", "+n;console.log("Request Failed: "+t)})});
